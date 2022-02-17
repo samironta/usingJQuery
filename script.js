@@ -186,3 +186,21 @@ $("#button-card-1").click(function () {
 $("#button-card-2").click(function () {
     $("#par-2").fadeOut(1000).fadeIn(1000);
 });
+//------------------------12)The_Importance_of_this___Challenge_1
+$("p").click(function () {
+    $(this).text("Changed only the text for this paragraph");
+});
+
+$(".card").mouseenter(function () {
+    $(this).fadeTo(2000, 0.2).fadeTo(2000, 1);
+});
+//-----------------------13)The_Importance_of_this___Challenge_2
+$(".module-nav").on("click", function () {
+    let allModulesCardsSelector = ".card";
+    let thisModuleCardsSelector = "." + this.id + "-card";
+
+    $(allModulesCardsSelector).removeClass("card-highlight");
+
+
+    $(thisModuleCardsSelector).addClass("card-highlight");
+});
