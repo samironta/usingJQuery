@@ -98,7 +98,7 @@ $(document).ready(function () {
     $("p").css("color", "blue").slideUp(2000).slideDown(2000);
     $("a").attr("href", "http://www.example.com");
 });
-// challenges
+// -----challenges--------most of the methods below do not relate to the index.html file------------
 $("p").click(function () {
     $("p").css("color", "red");
 });
@@ -169,4 +169,20 @@ $("#button-card-2").mouseenter(function () {
 });
 $("#button-card-2").mouseleave(function () {
     $("#par-2").fadeTo(1000, 1);
+});
+//-----------------------------------------------------------------------
+$("button").mouseenter(function () {
+    $("button").removeClass("make-red").addClass("make-border");
+});
+
+$("button").mouseleave(function () {
+    $("button").removeClass("make-border").addClass("make-red");
+});
+//-----------------------------------------------------------------
+$("#button-card-1").click(function () {
+    $("#par-1").hide(2000).show(2000);
+});
+
+$("#button-card-2").click(function () {
+    $("#par-2").fadeOut(1000).fadeIn(1000);
 });
